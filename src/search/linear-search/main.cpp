@@ -1,5 +1,5 @@
 #include <iostream>
-#include "helpers.h"
+#include "../../helpers/helpers.h"
 using namespace std;
 
 // time complexity: O(n)
@@ -10,7 +10,7 @@ int main()
     int *arr = new int[length];
     Helpers helper;
     helper.PopulateArray(arr, length);
-    cout << "What number are you looking for? 1-" << __throw_bad_array_new_length << endl;
+    cout << "What number are you looking for? 1-" << length << endl;
     string lookup_num;
     cin >> lookup_num;
 
