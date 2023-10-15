@@ -4,7 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "src/helpers"
+                "src/helpers",
+                "src/data-structures/queue"
             ],
             "defines": [],
             "macFrameworkPath": [
