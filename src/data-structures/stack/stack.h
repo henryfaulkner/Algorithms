@@ -1,17 +1,17 @@
-#ifndef QUEUE_H
-#define QUEUE_H
+#ifndef STACK_H
+#define STACK_H
 
-class Queue
+class Stack
 {
 public:
     int length;
-    Queue();
+    Stack();
     template <typename T>
-    void Enqueue(T item);
+    void Push(T item);
     template <typename T>
-    T Deque();
+    T Pop();
     template <typename T>
     T Peek();
 };
 
-#endif // QUEUE_H
+#endif // STACK_H

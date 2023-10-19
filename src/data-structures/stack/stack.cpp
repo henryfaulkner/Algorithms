@@ -1,51 +1,43 @@
 #include <iostream>
-#include "queue.h"
+#include "stack.h"
 #include "node.h"
 using namespace std;
 
 int Length;
 Node Head;
-Node Tail;
 
-Queue::Queue()
+Stack::Stack()
 {
     Length = 0;
 }
 
 template <typename T>
-void Queue::Enqueue(T item)
+void Stack::Push(T item)
 {
     if (Length == 0)
     {
         Head = item;
-        Tail = item;
     }
     else
     {
-        Tail.Next = item;
-        Tail = Tail.Next;
+        Head.Next = item;
+        Head = Head.Next;
     }
     Length = Length + 1;
 }
 
 template <typename T>
-T Queue::Deque()
+T Stack::Pop()
 {
-    if (head = NULL)
-    {
-        return NULL;
-    }
-
-    Length = Length - 1;
+    Node temp = Head;
     Head = Head.Next;
-
-    free(Head.Next);
-
+    free(temp);
+    Length = Length - 1;
     return Head.Value;
 }
 
 template <typename T>
-T Queue::Peek()
+T Stack::Peek()
 {
-    return head.Value;
+    return Head.Value;
 }
