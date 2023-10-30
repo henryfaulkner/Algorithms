@@ -6,7 +6,9 @@
                 "${workspaceFolder}/**",
                 "src/helpers",
                 "src/data-structures/queue",
-                "src/data-structures/stack"
+                "src/data-structures/stack",
+                "src/trees/traversal",
+                "src/trees"
             ],
             "defines": [],
             "macFrameworkPath": [
